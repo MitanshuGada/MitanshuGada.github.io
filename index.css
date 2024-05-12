@@ -1,3 +1,15 @@
 .background-theme-svg {
     color: '#ffffff'
 }
+
+.hacker-color{
+    color: #20C20E;
+}
+
+.name-strong-font{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.full-screen{
+    height: 100vh;
+}
