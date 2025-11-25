@@ -1,4 +1,3 @@
-import React from 'react';
 import { ExternalLink, Calendar } from 'lucide-react';
 
 interface Project {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Linkedin, Mail, Download, Briefcase, MapPin } from 'lucide-react';
 
 export default function Hero() {

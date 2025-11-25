@@ -1,4 +1,3 @@
-import React from 'react';
 
 const skillsData: Record<string, string[]> = {
   "Languages": ["C", "C++", "Java", "Kotlin", "Python", "JavaScript", "TypeScript", "C#"],
