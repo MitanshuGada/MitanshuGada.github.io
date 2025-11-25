@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/portfolio.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Footer from './components/Footer';
 
-function App() {
-	const [count, setCount] = useState(0)
+export default function App() {
+	const [darkMode, setDarkMode] = useState(false);
+
+	useEffect(() => {
+		if (darkMode) {
+			document.body.setAttribute('data-bs-theme', 'dark');
+		} else {
+			document.body.setAttribute('data-bs-theme', 'light');
+		}
+	}, [darkMode]);
 
 	return (
-		<>
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					{/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
-				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
-			<h1>Mitanshu's Portfolio Wesbite</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
-		</>
-	)
+		<div>
+			<Header darkMode={darkMode} setDarkMode={setDarkMode} />
+			<Hero />
+			<Experience />
+			<Education />
+			<Projects />
+			<Skills />
+			<Footer />
+		</div>
+	);
 }
-
-export default App
