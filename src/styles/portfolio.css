@@ -113,10 +113,6 @@ body {
     margin: 4px;
 }
 
-.location-badge {
-    background: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%) !important;
-}
-
 .highlight-item {
     padding-left: 20px;
     position: relative;
