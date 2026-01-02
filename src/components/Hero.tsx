@@ -16,13 +16,13 @@ export default function Hero() {
                                 <Briefcase size={16} className="me-2" style={{ display: 'inline' }} />
                                 Software Engineer
                             </span>
-                            <span className="stat-badge location-badge">
+                            <span className="stat-badge">
                                 <MapPin size={16} className="me-2" style={{ display: 'inline' }} />
                                 Seattle, Washington
                             </span>
                         </div>
                         <h1 className="display-4 fw-bold mb-3">
-                            Building scalable systems at Amazon
+                            Building scalable distributed systems at Amazon
                         </h1>
                         <p className="lead mb-4">
                             Software Development Engineer passionate about cloud infrastructure, CI/CD pipelines,
